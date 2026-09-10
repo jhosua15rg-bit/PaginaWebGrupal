@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tailwind.generated.css" />
+    <title>Contacto | IESTP Huanta</title>
+  </head>
+  <body class="bg-[#fbfcfa] text-ink">
+    <header class="border-b border-slate-200 bg-white">
+      <nav class="section-wrap flex min-h-20 items-center justify-between">
+        <a
+          href="../index.html"
+          class="flex items-center gap-3 font-extrabold text-navy"
+          ><span
+            class="grid size-11 place-items-center rounded-xl bg-navy text-white"
+            >H</span
+          >IESTP Huanta</a
+        ><a
+          href="../index.html"
+          class="rounded-full border border-slate-200 px-4 py-2 text-sm font-bold text-navy hover:border-teal"
+          >← Inicio</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero py-20 text-white">
+        <div class="section-wrap">
+          <p
+            class="text-xs font-extrabold uppercase tracking-[0.2em] text-gold"
+          >
+            Estamos para ayudarte
+          </p>
+          <h1 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-6xl">
+            Contáctanos
+          </h1>
+          <p class="mt-5 max-w-xl text-lg leading-8 text-slate-200">
+            Resolvemos tus dudas sobre programas, admisión y servicios
+            institucionales.
+          </p>
+        </div>
+      </section>
+      <section
+        class="section-wrap grid gap-10 py-16 lg:grid-cols-[0.8fr_1.2fr]"
+      >
+        <div>
+          <h2 class="text-3xl font-extrabold text-navy">Hablemos</h2>
+          <p class="mt-4 leading-7 text-slate-600">
+            Visítanos o escríbenos. Nuestro equipo está listo para orientarte.
+          </p>
+          <div class="mt-8 space-y-5 text-sm text-slate-600">
+            <p>
+              <strong class="block text-navy">Dirección</strong>Jr. Córdoba N.º
+              650<br />Huanta, Ayacucho - Perú
+            </p>
+            <p>
+              <strong class="block text-navy">Teléfono</strong
+              ><a class="font-bold text-teal" href="tel:+5166322296"
+                >(066) 322296</a
+              >
+            </p>
+            <p>
+              <strong class="block text-navy">Correo</strong
+              ><a
+                class="font-bold text-teal"
+                href="mailto:informes@iestphuanta.edu.pe"
+                >informes@iestphuanta.edu.pe</a
+              >
+            </p>
+          </div>
+        </div>
+        <form
+          class="rounded-2xl bg-white p-7 shadow-xl shadow-navy/5 ring-1 ring-slate-200"
+          action="mailto:informes@iestphuanta.edu.pe"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="text-sm font-bold text-navy"
+              >Nombre<input
+                class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-teal focus:ring-4 focus:ring-teal/10"
+                type="text"
+                name="nombre"
+                required /></label
+            ><label class="text-sm font-bold text-navy"
+              >Correo<input
+                class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-teal focus:ring-4 focus:ring-teal/10"
+                type="email"
+                name="correo"
+                required
+            /></label>
+          </div>
+          <label class="mt-5 block text-sm font-bold text-navy"
+            >Mensaje<textarea
+              class="mt-2 min-h-40 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-teal focus:ring-4 focus:ring-teal/10"
+              name="mensaje"
+              required
+            ></textarea></label
+          ><button
+            class="mt-6 rounded-full bg-navy px-6 py-3.5 text-sm font-extrabold text-white hover:bg-teal"
+            type="submit"
+          >
+            Enviar consulta →
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-navy py-7 text-center text-sm text-slate-300">
+      © 2025 IESTP Huanta ·
+      <a class="text-gold" href="../index.html">Volver al inicio</a>
+    </footer>
+  </body>
+</html>
