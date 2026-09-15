@@ -1,35 +1,63 @@
-<nav>
-  <ul>
-    <li>
-      Nosotros
+<header id="site-header" class="border-b border-slate-200/80 bg-white shadow-sm shadow-slate-200/40">
+  <div class="bg-navy text-white">
+    <div class="section-wrap flex flex-col gap-2 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-200 sm:flex-row sm:items-center sm:justify-between">
+      <div class="hidden items-center gap-5 md:flex">
+        <span>Jr. Córdova N° 650</span>
+        <span>Huanta, Ayacucho</span>
+      </div>
+      <div class="flex items-center gap-4 sm:justify-end">
+        <a class="transition hover:text-gold" href="tel:+5166322296">Tel: (066) 322296</a>
+        <a class="transition hover:text-gold" href="mailto:informes@iestphuanta.edu.pe">informes@iestphuanta.edu.pe</a>
+      </div>
+    </div>
+  </div>
 
-      <ul>
-        <li>Presentación</li>
+  <nav class="section-wrap flex min-h-20 items-center justify-between gap-6 py-4" aria-label="Navegación principal">
+    <a href="../index.html" class="flex items-center gap-3 text-navy" aria-label="Ir al inicio">
+      <span class="grid size-12 place-items-center rounded-xl bg-navy text-xl font-extrabold text-white shadow-lg shadow-navy/15">H</span>
+      <span class="leading-tight">
+        <strong class="block text-base font-extrabold tracking-tight">IESTP HUANTA</strong>
+        <small class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Educación que transforma</small>
+      </span>
+    </a>
 
-        <li>Visión, Misión y Valores</li>
+    <div class="hidden items-center gap-1 text-sm font-bold text-slate-700 lg:flex">
+      <div class="group relative">
+        <button type="button" class="flex items-center gap-2 rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy">
+          Nosotros <span aria-hidden="true">▾</span>
+        </button>
+        <div class="absolute left-0 top-full hidden min-w-[220px] rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl shadow-slate-200/60 group-hover:block">
+          <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="../index.html#nosotros">Presentación</a>
+          <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="../index.html#nosotros">Visión, Misión y Valores</a>
+          <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="../index.html#nosotros">Organización Institucional</a>
+          <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="../index.html#nosotros">Plana Jerárquica</a>
+          <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="../index.html#nosotros">Plana Docente</a>
+        </div>
+      </div>
+      <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="../index.html#carreras">Programas de Estudio</a>
+      <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="../pages/admision.html">Admisión y Matrícula</a>
+      <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="../pages/transparencia.html">Transparencia</a>
+      <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="../pages/tramites.html">Trámite</a>
+      <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="../index.html#contacto">Contáctanos</a>
+      <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="../index.html#servicios">Servicios</a>
+    </div>
 
-        <li>Organización Institucional</li>
+    <button class="focus-ring grid size-11 place-items-center rounded-xl border border-slate-200 text-navy lg:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+      <span class="text-xl" aria-hidden="true">☰</span>
+    </button>
 
-        <li>Plana Jerárquica</li>
+    <a href="../pages/admision.html" class="hidden rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-navy shadow-lg shadow-gold/20 transition hover:-translate-y-0.5 hover:bg-amber-300 sm:inline-flex">Admisión 2025</a>
+  </nav>
 
-        <li>Plana Docente</li>
-
-        <li>Local</li>
-      </ul>
-    </li>
-
-    <li>Programas de Estudio</li>
-
-    <li>Admisión y Matrícula</li>
-
-    <li>Transparencia</li>
-
-    <li>Trámite</li>
-
-    <li>Contáctanos</li>
-
-    <li>Servicios</li>
-
-    <li>Otras Páginas</li>
-  </ul>
-</nav>
+  <div id="mobile-menu" class="section-wrap hidden border-t border-slate-200 py-4 lg:hidden" aria-label="Menú móvil">
+    <div class="grid gap-2 text-sm font-bold text-navy">
+      <a class="rounded-xl px-4 py-3 hover:bg-mist" href="../index.html#nosotros">Nosotros</a>
+      <a class="rounded-xl px-4 py-3 hover:bg-mist" href="../index.html#carreras">Programas de estudio</a>
+      <a class="rounded-xl px-4 py-3 hover:bg-mist" href="../pages/admision.html">Admisión y matrícula</a>
+      <a class="rounded-xl px-4 py-3 hover:bg-mist" href="../pages/transparencia.html">Transparencia</a>
+      <a class="rounded-xl px-4 py-3 hover:bg-mist" href="../pages/tramites.html">Trámite</a>
+      <a class="rounded-xl px-4 py-3 hover:bg-mist" href="../index.html#contacto">Contáctanos</a>
+      <a class="rounded-xl bg-gold px-4 py-3" href="../pages/admision.html">Admisión y matrícula <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</header>

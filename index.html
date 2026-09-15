@@ -20,38 +20,72 @@
 
   <body>
     <!-- HEADER -->
-    <header class="border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <header id="site-header" class="border-b border-slate-200/80 bg-white shadow-sm shadow-slate-200/40">
+      <div class="top-contact hidden md:block">
+        <div
+          class="section-wrap flex min-h-10 items-center justify-end gap-5 text-xs font-semibold"
+        >
+          <div class="flex items-center gap-5">
+            <a class="transition hover:text-indigo-600" href="tel:+5166322296">☎ (066) 322296</a>
+            <span class="h-5 w-px bg-slate-200" aria-hidden="true"></span>
+            <span>⚑ Jr. Córdova N° 650</span>
+            <span class="h-5 w-px bg-slate-200" aria-hidden="true"></span>
+            <a class="transition hover:text-indigo-600" href="mailto:contactos@iestphuanta.edu.pe">✉ contactos@iestphuanta.edu.pe</a>
+            <span class="h-5 w-px bg-slate-200" aria-hidden="true"></span>
+            <a class="font-bold text-slate-400 transition hover:text-indigo-600" href="#" aria-label="Facebook">f</a>
+          </div>
+        </div>
+      </div>
+
       <nav
-        class="section-wrap flex min-h-20 items-center justify-between gap-6"
+        class="flex min-h-[5.7rem] items-center justify-between gap-6"
         aria-label="Navegación principal"
       >
         <a
           href="index.html"
-          class="flex items-center gap-3 text-navy"
+          class="brand-mark flex items-center gap-3"
           aria-label="Ir al inicio"
         >
           <span
-            class="grid size-11 place-items-center rounded-xl bg-navy text-lg font-extrabold text-white shadow-lg shadow-navy/15"
+            class="grid size-12 place-items-center rounded-full border-4 border-white/80 bg-white text-xl font-extrabold text-indigo-700 shadow-lg"
             >H</span
           >
-          <span class="leading-tight"
-            ><strong class="block text-sm font-extrabold tracking-tight"
-              >IESTP Huanta</strong
+          <span class="leading-tight text-left"
+            ><strong class="block text-base font-extrabold tracking-tight"
+              >IESTP HUANTA</strong
             ><small
               class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500"
               >Educación que transforma</small
             ></span
           >
         </a>
-        <div
-          class="hidden items-center gap-7 text-sm font-semibold text-slate-600 lg:flex"
-        >
-          <a class="transition hover:text-teal" href="#nosotros">Nosotros</a>
-          <a class="transition hover:text-teal" href="#carreras">Programas</a>
-          <a class="transition hover:text-teal" href="#servicios">Servicios</a>
-          <a class="transition hover:text-teal" href="#noticias">Noticias</a>
-          <a class="transition hover:text-teal" href="#contacto">Contacto</a>
+
+        <div class="hidden items-center gap-1 text-sm font-bold text-slate-700 lg:flex">
+          <div class="group relative">
+            <button
+              type="button"
+              class="flex items-center gap-2 rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy"
+            >
+              Nosotros <span aria-hidden="true">▾</span>
+            </button>
+            <div
+              class="absolute left-0 top-full hidden min-w-[220px] rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl shadow-slate-200/60 group-hover:block"
+            >
+              <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="#nosotros">Presentación</a>
+              <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="#nosotros">Visión, Misión y Valores</a>
+              <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="#nosotros">Organización Institucional</a>
+              <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="#nosotros">Plana Jerárquica</a>
+              <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="#nosotros">Plana Docente</a>
+            </div>
+          </div>
+          <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="#carreras">Programas de Estudio</a>
+          <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="pages/admision.html">Admisión y Matrícula</a>
+          <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="pages/transparencia.html">Transparencia</a>
+          <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="pages/tramites.html">Trámite</a>
+          <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="#contacto">Contáctanos</a>
+          <a class="rounded-full px-4 py-2.5 transition hover:bg-slate-100 hover:text-navy" href="#servicios">Servicios</a>
         </div>
+
         <button
           class="focus-ring grid size-11 place-items-center rounded-xl border border-slate-200 text-navy lg:hidden"
           type="button"
@@ -61,29 +95,27 @@
         >
           <span class="text-xl" aria-hidden="true">☰</span>
         </button>
+
         <a
           href="pages/admision.html"
           class="hidden rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-navy shadow-lg shadow-gold/20 transition hover:-translate-y-0.5 hover:bg-amber-300 sm:inline-flex"
           >Admisión 2025</a
         >
       </nav>
+
       <div
         id="mobile-menu"
         class="section-wrap hidden border-t border-slate-200 py-4 lg:hidden"
         aria-label="Menú móvil"
       >
         <div class="grid gap-2 text-sm font-bold text-navy">
-          <a class="rounded-xl px-4 py-3 hover:bg-mist" href="#nosotros"
-            >Nosotros</a
-          ><a class="rounded-xl px-4 py-3 hover:bg-mist" href="#carreras"
-            >Programas de estudio</a
-          ><a class="rounded-xl px-4 py-3 hover:bg-mist" href="#servicios"
-            >Servicios</a
-          ><a class="rounded-xl px-4 py-3 hover:bg-mist" href="#noticias"
-            >Noticias y eventos</a
-          ><a class="rounded-xl bg-gold px-4 py-3" href="pages/admision.html"
-            >Admisión y matrícula <span aria-hidden="true">→</span></a
-          >
+          <a class="rounded-xl px-4 py-3 hover:bg-mist" href="#nosotros">Nosotros</a>
+          <a class="rounded-xl px-4 py-3 hover:bg-mist" href="#carreras">Programas de estudio</a>
+          <a class="rounded-xl px-4 py-3 hover:bg-mist" href="pages/admision.html">Admisión y matrícula</a>
+          <a class="rounded-xl px-4 py-3 hover:bg-mist" href="pages/transparencia.html">Transparencia</a>
+          <a class="rounded-xl px-4 py-3 hover:bg-mist" href="pages/tramites.html">Trámite</a>
+          <a class="rounded-xl px-4 py-3 hover:bg-mist" href="#contacto">Contáctanos</a>
+          <a class="rounded-xl bg-gold px-4 py-3" href="pages/admision.html">Admisión y matrícula <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </header>
@@ -92,25 +124,19 @@
     <main>
       <!-- HERO -->
 
-      <section
-        id="hero"
-        class="relative isolate overflow-hidden bg-navy text-white"
-      >
-        <h1
-          class="section-wrap pt-20 text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl"
-        >
-          Construye tu futuro con formación de calidad
-        </h1>
-
-        <p class="section-wrap mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-          Instituto de Educación Superior Público Huanta
-        </p>
-
-        <a
-          href="#carreras"
-          class="section-wrap mt-8 inline-flex rounded-full bg-gold px-6 py-3.5 text-sm font-extrabold text-navy transition hover:bg-amber-300"
-          >Explorar programas <span aria-hidden="true">→</span></a
-        >
+      <section id="hero" class="home-hero text-white">
+        <div class="home-hero-media" aria-hidden="true"></div>
+        <div class="section-wrap relative z-10 flex min-h-[38rem] items-center py-20">
+          <div class="max-w-2xl">
+            <p class="hero-pill">INSTITUTO DE EDUCACIÓN SUPERIOR PÚBLICO “HUANTA”</p>
+            <h1 class="mt-7 max-w-2xl text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-7xl">
+              Construye tu futuro con formación de calidad
+            </h1>
+            <p class="mt-6 max-w-xl text-base font-medium leading-7 text-white/90 sm:text-lg">
+              El Instituto de Educación Superior Público Huanta se enorgullece de ser un instituto licenciado, lo que garantiza que nuestros programas académicos cumplen con los más altos estándares de calidad establecidos por las autoridades educativas.
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- NOSOTROS -->
@@ -655,17 +681,12 @@
 
     <!-- FOOTER -->
 
-    <footer
-      class="border-t-4 border-gold bg-navy text-white"
-      aria-labelledby="footer-title"
-    >
-      <div
-        class="section-wrap grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.8fr_1fr]"
-      >
+    <footer id="site-footer" class="border-t-4 border-gold bg-navy text-white" aria-labelledby="footer-title">
+      <div class="section-wrap grid gap-12 py-16 sm:grid-cols-2 xl:grid-cols-[1.4fr_0.8fr_0.8fr_1.1fr]">
         <div>
           <div class="flex items-center gap-3">
             <span
-              class="grid size-11 place-items-center rounded-xl bg-gold text-lg font-extrabold text-navy"
+              class="grid size-12 place-items-center rounded-xl bg-gold text-xl font-extrabold text-navy"
               >H</span
             >
             <p id="footer-title" class="text-xl font-extrabold">IESTP Huanta</p>
@@ -677,83 +698,54 @@
           <a
             href="pages/admision.html"
             class="mt-6 inline-flex rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-navy shadow-lg shadow-gold/20 transition hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
-            >Conoce la admisión
-            <span class="ml-2" aria-hidden="true">→</span></a
+            >Conoce la admisión <span class="ml-2" aria-hidden="true">→</span></a
           >
         </div>
+
         <nav aria-label="Enlaces principales del pie de página">
           <h3 class="font-extrabold text-gold">Explora</h3>
           <ul class="mt-5 space-y-3 text-sm text-slate-300">
             <li>
-              <a
-                class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-                href="#nosotros"
-                >Sobre nosotros</a
-              >
+              <a class="transition hover:text-white" href="#nosotros">Sobre nosotros</a>
             </li>
             <li>
-              <a
-                class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-                href="#carreras"
-                >Programas de estudio</a
-              >
+              <a class="transition hover:text-white" href="#carreras">Programas de estudio</a>
             </li>
             <li>
-              <a
-                class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-                href="pages/noticias.html"
-                >Noticias y eventos</a
-              >
+              <a class="transition hover:text-white" href="pages/noticias.html">Noticias y eventos</a>
             </li>
           </ul>
         </nav>
+
         <nav aria-label="Enlaces institucionales">
           <h3 class="font-extrabold text-gold">Institución</h3>
           <ul class="mt-5 space-y-3 text-sm text-slate-300">
             <li>
-              <a
-                class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-                href="pages/admision.html"
-                >Admisión y matrícula</a
-              >
+              <a class="transition hover:text-white" href="pages/admision.html">Admisión y matrícula</a>
             </li>
             <li>
-              <a
-                class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-                href="pages/transparencia.html"
-                >Transparencia</a
-              >
+              <a class="transition hover:text-white" href="pages/transparencia.html">Transparencia</a>
             </li>
             <li>
-              <a
-                class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-                href="pages/contacto.html"
-                >Contáctanos</a
-              >
+              <a class="transition hover:text-white" href="pages/contacto.html">Contáctanos</a>
             </li>
           </ul>
         </nav>
+
         <div>
           <h3 class="font-extrabold text-gold">Visítanos</h3>
-          <address
-            class="mt-5 space-y-3 text-sm not-italic leading-6 text-slate-300"
-          >
-            Jr. Córdoba N.º 650<br />Huanta, Ayacucho - Perú<br /><a
-              class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-              href="tel:+5166322296"
-              >(066) 322296</a
-            ><br /><a
-              class="transition hover:text-white focus-visible:text-white focus-visible:outline-none"
-              href="mailto:informes@iestphuanta.edu.pe"
-              >informes@iestphuanta.edu.pe</a
-            >
+          <address class="mt-5 space-y-3 text-sm not-italic leading-6 text-slate-300">
+            Jr. Córdoba N.º 650<br />
+            Huanta, Ayacucho - Perú<br />
+            <a class="transition hover:text-white" href="tel:+5166322296">(066) 322296</a><br />
+            <a class="transition hover:text-white" href="mailto:informes@iestphuanta.edu.pe">informes@iestphuanta.edu.pe</a>
           </address>
+          <p class="mt-5 text-sm text-slate-300">Horario: Lun - Vie: 7:30 am - 1:15 pm</p>
         </div>
       </div>
+
       <div class="border-t border-white/10">
-        <div
-          class="section-wrap flex flex-col gap-2 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between"
-        >
+        <div class="section-wrap flex flex-col gap-2 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2025 IESTP Huanta. Todos los derechos reservados.</p>
           <p>Educación pública al servicio de la comunidad.</p>
         </div>
