@@ -9,7 +9,7 @@ Sitio web estático del Instituto de Educación Superior Tecnológico Público H
 - `components/`: fragmentos HTML reutilizables y referencias de secciones.
 - `css/tailwind.css`: fuente de estilos y configuración de escaneo de Tailwind.
 - `css/tailwind.generated.css`: salida generada para el navegador. No editar manualmente.
-- `js/`: comportamiento del sitio; `app.js` controla el menú móvil del inicio.
+- `js/`: comportamiento del sitio; `app.js` controla el menú móvil del inicio y `footer.js` inserta el pie completo en las páginas internas.
 - `assets/`: imágenes y otros recursos estáticos.
 
 ## Desarrollo

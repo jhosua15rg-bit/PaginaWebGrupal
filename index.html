@@ -46,17 +46,10 @@
           class="brand-mark flex items-center gap-3"
           aria-label="Ir al inicio"
         >
-          <span
-            class="grid size-12 place-items-center rounded-full border-4 border-white/80 bg-white text-xl font-extrabold text-indigo-700 shadow-lg"
-            >H</span
-          >
-          <span class="leading-tight text-left"
-            ><strong class="block text-base font-extrabold tracking-tight"
-              >IESTP HUANTA</strong
-            ><small
-              class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500"
-              >Educación que transforma</small
-            ></span
+          <img
+            class="h-10 w-36 object-contain object-left"
+            src="assets/logo.png"
+            alt="IESTP Huanta"
           >
         </a>
 
@@ -69,7 +62,7 @@
               Nosotros <span aria-hidden="true">▾</span>
             </button>
             <div
-              class="absolute left-0 top-full hidden min-w-[220px] rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl shadow-slate-200/60 group-hover:block"
+              class="absolute left-0 top-full z-50 hidden min-w-[220px] rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl shadow-slate-200/60 group-hover:block"
             >
               <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="#nosotros">Presentación</a>
               <a class="block rounded-xl px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-mist hover:text-navy" href="#nosotros">Visión, Misión y Valores</a>
@@ -216,96 +209,129 @@
 
       <!-- ESTADISTICAS -->
 
-      <section id="estadisticas" class="border-y border-slate-200 bg-mist">
-        <h2>Estadísticas</h2>
-
-        <div class="section-wrap grid grid-cols-2 gap-8 py-12 sm:grid-cols-4">
-          <h3 class="text-4xl font-extrabold text-navy">
-            1000<span class="text-teal">+</span>
-          </h3>
-          <p class="text-sm font-semibold text-slate-500">Egresados</p>
-        </div>
-
-        <div>
-          <h3 class="text-4xl font-extrabold text-navy">
-            50<span class="text-teal">+</span>
-          </h3>
-          <p class="text-sm font-semibold text-slate-500">Docentes</p>
-        </div>
-
-        <div>
-          <h3 class="text-4xl font-extrabold text-navy">5</h3>
-          <p class="text-sm font-semibold text-slate-500">
-            Programas de Estudio
-          </p>
-        </div>
-
-        <div>
-          <h3 class="text-4xl font-extrabold text-navy">
-            30<span class="text-teal">+</span>
-          </h3>
-          <p class="text-sm font-semibold text-slate-500">
-            Años de Experiencia
-          </p>
+      <section id="estadisticas" class="border-y border-slate-200 bg-mist py-16 lg:py-20">
+        <div class="section-wrap">
+          <div class="mb-10 max-w-2xl">
+            <p class="eyebrow">Nuestros números</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+              Impacto en la comunidad
+            </h2>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+              <p class="text-4xl font-extrabold text-navy">
+                1000<span class="text-teal">+</span>
+              </p>
+              <p class="mt-2 text-sm font-semibold text-slate-500">Egresados</p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+              <p class="text-4xl font-extrabold text-navy">
+                50<span class="text-teal">+</span>
+              </p>
+              <p class="mt-2 text-sm font-semibold text-slate-500">Docentes</p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+              <p class="text-4xl font-extrabold text-navy">5</p>
+              <p class="mt-2 text-sm font-semibold text-slate-500">
+                Programas de Estudio
+              </p>
+            </div>
+            <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+              <p class="text-4xl font-extrabold text-navy">
+                30<span class="text-teal">+</span>
+              </p>
+              <p class="mt-2 text-sm font-semibold text-slate-500">
+                Años de Experiencia
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- CARRERAS -->
 
-      <section id="carreras" class="section-wrap py-20">
-        <h2
-          class="mb-10 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl"
-        >
-          Programas de Estudio
-        </h2>
+      <section id="carreras" class="section-wrap py-20 lg:py-28">
+        <div class="mb-10 flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <p class="eyebrow">Formación técnica</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl">
+              Programas de Estudio
+            </h2>
+          </div>
+          <a href="pages/carreras.html" class="text-sm font-extrabold text-teal hover:underline">
+            Ver todos los programas <span aria-hidden="true">→</span>
+          </a>
+        </div>
 
-        <article
-          class="rounded-2xl bg-navy p-7 text-white shadow-xl shadow-navy/10"
-        >
-          <h3 class="mt-8 text-xl font-extrabold">Diseño y Programación Web</h3>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group rounded-2xl bg-navy p-7 text-white shadow-xl shadow-navy/10 transition hover:-translate-y-1">
+            <span class="grid size-12 place-items-center rounded-xl bg-white/10 text-lg font-extrabold text-gold">01</span>
+            <h3 class="mt-6 text-xl font-extrabold">Diseño y Programación Web</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              Desarrollo de aplicaciones web modernas con tecnologías actuales.
+            </p>
+            <a href="pages/carreras.html" class="mt-6 inline-block text-sm font-extrabold text-gold hover:underline">
+              Conocer más <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
-          <p class="mt-3 text-sm leading-6 text-slate-300">
-            Desarrollo de aplicaciones web modernas.
-          </p>
-        </article>
+          <article class="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-teal hover:shadow-lg">
+            <span class="grid size-12 place-items-center rounded-xl bg-teal/10 text-lg font-extrabold text-teal">02</span>
+            <h3 class="mt-6 text-xl font-extrabold text-navy">Enfermería Técnica</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Formación integral para el sector salud con prácticas clínicas.
+            </p>
+            <a href="pages/carreras.html" class="mt-6 inline-block text-sm font-extrabold text-teal hover:underline">
+              Conocer más <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
-        <article
-          class="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-teal"
-        >
-          <h3 class="text-xl font-extrabold text-navy">Enfermería Técnica</h3>
+          <article class="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-teal hover:shadow-lg">
+            <span class="grid size-12 place-items-center rounded-xl bg-navy/10 text-lg font-extrabold text-navy">03</span>
+            <h3 class="mt-6 text-xl font-extrabold text-navy">
+              Mecatrónica Automotriz
+            </h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Especialización en sistemas automotrices y mecatrónica.
+            </p>
+            <a href="pages/carreras.html" class="mt-6 inline-block text-sm font-extrabold text-teal hover:underline">
+              Conocer más <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
-          <p class="mt-3 text-sm leading-6 text-slate-600">
-            Formación para el sector salud.
-          </p>
-        </article>
+          <article class="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-teal hover:shadow-lg">
+            <span class="grid size-12 place-items-center rounded-xl bg-gold/20 text-lg font-extrabold text-navy">04</span>
+            <h3 class="mt-6 text-xl font-extrabold text-navy">Industrias Alimentarias</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Procesamiento, control de calidad y gestión de alimentos.
+            </p>
+            <a href="pages/carreras.html" class="mt-6 inline-block text-sm font-extrabold text-teal hover:underline">
+              Conocer más <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
-        <article
-          class="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-teal"
-        >
-          <h3 class="text-xl font-extrabold text-navy">
-            Mecatrónica Automotriz
-          </h3>
+          <article class="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-teal hover:shadow-lg">
+            <span class="grid size-12 place-items-center rounded-xl bg-teal/10 text-lg font-extrabold text-teal">05</span>
+            <h3 class="mt-6 text-xl font-extrabold text-navy">Producción Agropecuaria</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">
+              Gestión de producción agrícola y pecuaria sostenible.
+            </p>
+            <a href="pages/carreras.html" class="mt-6 inline-block text-sm font-extrabold text-teal hover:underline">
+              Conocer más <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
-          <p class="mt-3 text-sm leading-6 text-slate-600">
-            Especialización en sistemas automotrices.
-          </p>
-        </article>
-
-        <article
-          class="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
-        >
-          <h3>Industrias Alimentarias</h3>
-
-          <p>Procesamiento y control de alimentos.</p>
-        </article>
-
-        <article
-          class="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
-        >
-          <h3>Producción Agropecuaria</h3>
-
-          <p>Gestión de producción agrícola y pecuaria.</p>
-        </article>
+          <article class="group rounded-2xl bg-teal p-7 text-white shadow-xl shadow-teal/10 transition hover:-translate-y-1">
+            <span class="grid size-12 place-items-center rounded-xl bg-white/10 text-lg font-extrabold text-gold">+</span>
+            <h3 class="mt-6 text-xl font-extrabold">¿No sabes qué elegir?</h3>
+            <p class="mt-3 text-sm leading-6 text-teal-50">
+              Te orientamos para encontrar el programa ideal para ti.
+            </p>
+            <a href="pages/admision.html" class="mt-6 inline-block text-sm font-extrabold text-gold hover:underline">
+              Recibir orientación <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
       </section>
 
       <!-- SERVICIOS -->
@@ -408,21 +434,19 @@
 
         <div class="grid gap-5 md:grid-cols-2">
           <article
-            class="rounded-2xl border border-slate-200 bg-white p-7 transition hover:border-teal hover:shadow-lg"
+            class="group rounded-2xl border border-slate-200 bg-white p-7 transition hover:border-teal hover:shadow-lg"
           >
             <div
               class="flex items-center justify-between text-xs font-bold uppercase tracking-widest text-teal"
             >
               <span>Admisión</span><span>Nuevo periodo</span>
             </div>
-            <h3 class="mt-8 text-2xl font-extrabold text-navy">
+            <h3 class="mt-4 text-2xl font-extrabold text-navy">
               Inicio de Matrículas
             </h3>
-
             <p class="mt-3 max-w-lg leading-7 text-slate-600">
-              Matrículas abiertas para el nuevo periodo académico.
+              Matrículas abiertas para el nuevo periodo académico. Conoce los requisitos y fechas límite.
             </p>
-
             <a
               class="mt-6 inline-block text-sm font-extrabold text-teal hover:underline"
               href="pages/admision.html"
@@ -431,19 +455,18 @@
           </article>
 
           <article
-            class="rounded-2xl border border-slate-200 bg-white p-7 transition hover:border-teal hover:shadow-lg"
+            class="group rounded-2xl border border-slate-200 bg-white p-7 transition hover:border-teal hover:shadow-lg"
           >
             <div
               class="flex items-center justify-between text-xs font-bold uppercase tracking-widest text-teal"
             >
               <span>Innovación</span><span>Institucional</span>
             </div>
-            <h3 class="mt-8 text-2xl font-extrabold text-navy">
+            <h3 class="mt-4 text-2xl font-extrabold text-navy">
               Feria Tecnológica
             </h3>
-
             <p class="mt-3 max-w-lg leading-7 text-slate-600">
-              Participación de estudiantes con proyectos innovadores.
+              Participación de estudiantes con proyectos innovadores en la feria tecnológica anual.
             </p>
             <a
               class="mt-6 inline-block text-sm font-extrabold text-teal hover:underline"
@@ -481,32 +504,36 @@
             >
           </div>
           <div class="grid gap-4 sm:grid-cols-2">
-            <article class="rounded-2xl bg-navy p-7 text-white">
+            <article class="group rounded-2xl bg-navy p-7 text-white transition hover:-translate-y-1 hover:shadow-xl">
               <span
                 class="text-xs font-bold uppercase tracking-widest text-gold"
                 >Celebración</span
               >
-              <h3 class="mt-8 text-xl font-extrabold">
+              <h3 class="mt-4 text-xl font-extrabold">
                 Aniversario Institucional
               </h3>
-
               <p class="mt-3 text-sm leading-6 text-slate-300">
                 Actividades conmemorativas del instituto.
               </p>
+              <a href="pages/eventos.html" class="mt-6 inline-block text-sm font-extrabold text-gold hover:underline">
+                Ver detalles <span aria-hidden="true">→</span>
+              </a>
             </article>
 
-            <article class="rounded-2xl bg-teal p-7 text-white">
+            <article class="group rounded-2xl bg-teal p-7 text-white transition hover:-translate-y-1 hover:shadow-xl">
               <span
                 class="text-xs font-bold uppercase tracking-widest text-gold"
                 >Creatividad</span
               >
-              <h3 class="mt-8 text-xl font-extrabold">
+              <h3 class="mt-4 text-xl font-extrabold">
                 Concurso de Innovación
               </h3>
-
               <p class="mt-3 text-sm leading-6 text-teal-50">
                 Presentación de proyectos tecnológicos.
               </p>
+              <a href="pages/eventos.html" class="mt-6 inline-block text-sm font-extrabold text-gold hover:underline">
+                Ver detalles <span aria-hidden="true">→</span>
+              </a>
             </article>
           </div>
         </div>
@@ -515,86 +542,62 @@
       <!-- GALERIA -->
 
       <section id="galeria" class="section-wrap py-20 lg:py-24">
-        <div class="mb-10">
-          <p class="eyebrow">Conoce nuestros espacios</p>
-          <h2
-            class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl"
-          >
-            Galería Institucional
-          </h2>
+        <div class="mb-10 flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <p class="eyebrow">Conoce nuestros espacios</p>
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-navy sm:text-4xl"
+            >
+              Galería Institucional
+            </h2>
+          </div>
+          <a href="pages/galeria.html" class="text-sm font-extrabold text-teal hover:underline">
+            Ver galería completa <span aria-hidden="true">→</span>
+          </a>
         </div>
         <div class="grid gap-4 sm:grid-cols-3">
           <figure
-            class="group relative flex min-h-64 items-end overflow-hidden rounded-2xl bg-[linear-gradient(145deg,#12304a,#2b7180)] p-6 text-white shadow-lg"
+            class="group relative flex min-h-64 items-end overflow-hidden rounded-2xl shadow-lg"
           >
-            <div
-              class="absolute inset-0 opacity-20 transition group-hover:scale-105"
-              style="
-                background-image: radial-gradient(
-                  circle at 25% 25%,
-                  #f2b84b 0 2px,
-                  transparent 3px
-                );
-                background-size: 24px 24px;
-              "
-            ></div>
-            <figcaption class="relative">
-              <span
-                class="text-xs font-bold uppercase tracking-widest text-gold"
-                >Galería 01</span
-              >
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+              alt="Estudiantes trabajando en laboratorio"
+              class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <figcaption class="relative p-6 text-white">
+              <span class="text-xs font-bold uppercase tracking-widest text-gold">Galería 01</span>
               <p class="mt-2 font-extrabold">Aprendizaje práctico</p>
             </figcaption>
           </figure>
           <figure
-            class="group relative flex min-h-64 items-end overflow-hidden rounded-2xl bg-[linear-gradient(145deg,#0f766e,#164b5a)] p-6 text-white shadow-lg"
+            class="group relative flex min-h-64 items-end overflow-hidden rounded-2xl shadow-lg"
           >
-            <div
-              class="absolute inset-0 opacity-20 transition group-hover:scale-105"
-              style="
-                background-image:
-                  linear-gradient(
-                    135deg,
-                    transparent 45%,
-                    #f2b84b 46% 48%,
-                    transparent 49%
-                  ),
-                  linear-gradient(
-                    45deg,
-                    transparent 45%,
-                    #ffffff 46% 48%,
-                    transparent 49%
-                  );
-                background-size: 38px 38px;
-              "
-            ></div>
-            <figcaption class="relative">
-              <span
-                class="text-xs font-bold uppercase tracking-widest text-gold"
-                >Galería 02</span
-              >
+            <img
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
+              alt="Comunidad estudiantil"
+              class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-teal/80 via-teal/20 to-transparent"></div>
+            <figcaption class="relative p-6 text-white">
+              <span class="text-xs font-bold uppercase tracking-widest text-gold">Galería 02</span>
               <p class="mt-2 font-extrabold">Comunidad que inspira</p>
             </figcaption>
           </figure>
           <figure
-            class="group relative flex min-h-64 items-end overflow-hidden rounded-2xl bg-[linear-gradient(145deg,#f2b84b,#d97706)] p-6 text-navy shadow-lg"
+            class="group relative flex min-h-64 items-end overflow-hidden rounded-2xl shadow-lg"
           >
-            <div
-              class="absolute inset-0 opacity-20 transition group-hover:scale-105"
-              style="
-                background-image: radial-gradient(
-                  circle,
-                  #12304a 0 2px,
-                  transparent 3px
-                );
-                background-size: 22px 22px;
-              "
-            ></div>
-            <figcaption class="relative">
-              <span
-                class="text-xs font-bold uppercase tracking-widest text-navy/70"
-                >Galería 03</span
-              >
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+              alt="Talento en acción"
+              class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <figcaption class="relative p-6 text-white">
+              <span class="text-xs font-bold uppercase tracking-widest text-gold">Galería 03</span>
               <p class="mt-2 font-extrabold">Talento en acción</p>
             </figcaption>
           </figure>
@@ -682,7 +685,7 @@
     <!-- FOOTER -->
 
     <footer id="site-footer" class="border-t-4 border-gold bg-navy text-white" aria-labelledby="footer-title">
-      <div class="section-wrap grid gap-12 py-16 sm:grid-cols-2 xl:grid-cols-[1.4fr_0.8fr_0.8fr_1.1fr]">
+      <div class="footer-wrap grid gap-12 py-16 sm:grid-cols-2 xl:grid-cols-[1.4fr_0.8fr_0.8fr_1.1fr]">
         <div>
           <div class="flex items-center gap-3">
             <span
@@ -745,7 +748,7 @@
       </div>
 
       <div class="border-t border-white/10">
-        <div class="section-wrap flex flex-col gap-2 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <div class="footer-wrap flex flex-col gap-2 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2025 IESTP Huanta. Todos los derechos reservados.</p>
           <p>Educación pública al servicio de la comunidad.</p>
         </div>
