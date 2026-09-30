@@ -1,56 +1,67 @@
-const footerTemplate = `
-  <div class="footer-wrap grid gap-12 py-16 sm:grid-cols-2 xl:grid-cols-[1.4fr_0.8fr_0.8fr_1.1fr]">
-    <div>
-      <div class="flex items-center gap-3">
-        <span class="grid size-12 place-items-center rounded-xl bg-gold text-xl font-extrabold text-navy">H</span>
-        <p id="footer-title" class="text-xl font-extrabold">IESTP Huanta</p>
+// ============================================
+// FOOTER DINÁMICO - PÁGINAS INTERNAS
+// ============================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderFooter();
+});
+
+function renderFooter() {
+  const siteFooter = document.querySelector("[data-site-footer]");
+  if (!siteFooter) return;
+
+  const footerHTML = `
+    <div class="footer-wrap grid gap-12 py-16 sm:grid-cols-2 xl:grid-cols-[1.4fr_0.8fr_0.8fr_1.1fr]">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="grid size-12 place-items-center rounded-xl bg-gold text-xl font-extrabold text-navy">H</span>
+          <p class="text-xl font-extrabold">IESTP Huanta</p>
+        </div>
+        <p class="mt-5 max-w-sm text-sm leading-7 text-slate-300">
+          Formamos profesionales técnicos con vocación, innovación y compromiso con el desarrollo de Ayacucho.
+        </p>
+        <a href="../pages/admision.html" class="mt-6 inline-flex rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-navy shadow-lg shadow-gold/20 transition hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+          Conoce la admisión <span class="ml-2" aria-hidden="true">→</span>
+        </a>
       </div>
-      <p class="mt-5 max-w-sm text-sm leading-7 text-slate-300">
-        Formamos profesionales técnicos con vocación, innovación y compromiso con el desarrollo de Ayacucho.
-      </p>
-      <a href="../pages/admision.html" class="mt-6 inline-flex rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-navy shadow-lg shadow-gold/20 transition hover:bg-amber-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
-        Conoce la admisión <span class="ml-2" aria-hidden="true">→</span>
-      </a>
+
+      <nav aria-label="Enlaces principales del pie de página">
+        <h3 class="font-extrabold text-gold">Explora</h3>
+        <ul class="mt-5 space-y-3 text-sm text-slate-300">
+          <li><a class="transition hover:text-white" href="../index.html#nosotros">Sobre nosotros</a></li>
+          <li><a class="transition hover:text-white" href="../index.html#carreras">Programas de estudio</a></li>
+          <li><a class="transition hover:text-white" href="../pages/noticias.html">Noticias y eventos</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Enlaces institucionales">
+        <h3 class="font-extrabold text-gold">Institución</h3>
+        <ul class="mt-5 space-y-3 text-sm text-slate-300">
+          <li><a class="transition hover:text-white" href="../pages/admision.html">Admisión y matrícula</a></li>
+          <li><a class="transition hover:text-white" href="../pages/transparencia.html">Transparencia</a></li>
+          <li><a class="transition hover:text-white" href="../index.html#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h3 class="font-extrabold text-gold">Visítanos</h3>
+        <address class="mt-5 space-y-3 text-sm not-italic leading-6 text-slate-300">
+          Jr. Córdova N.º 650<br />
+          Huanta, Ayacucho - Perú<br />
+          <a class="transition hover:text-white" href="tel:+5166322296">(066) 322296</a><br />
+          <a class="transition hover:text-white" href="mailto:informes@iestphuanta.edu.pe">informes@iestphuanta.edu.pe</a>
+        </address>
+        <p class="mt-5 text-sm text-slate-300">Horario: Lun - Vie: 7:30 am - 1:15 pm</p>
+      </div>
     </div>
 
-    <nav aria-label="Enlaces principales del pie de página">
-      <h3 class="font-extrabold text-gold">Explora</h3>
-      <ul class="mt-5 space-y-3 text-sm text-slate-300">
-        <li><a class="transition hover:text-white" href="../index.html#nosotros">Sobre nosotros</a></li>
-        <li><a class="transition hover:text-white" href="../index.html#carreras">Programas de estudio</a></li>
-        <li><a class="transition hover:text-white" href="../pages/noticias.html">Noticias y eventos</a></li>
-      </ul>
-    </nav>
-
-    <nav aria-label="Enlaces institucionales">
-      <h3 class="font-extrabold text-gold">Institución</h3>
-      <ul class="mt-5 space-y-3 text-sm text-slate-300">
-        <li><a class="transition hover:text-white" href="../pages/admision.html">Admisión y matrícula</a></li>
-        <li><a class="transition hover:text-white" href="../pages/transparencia.html">Transparencia</a></li>
-        <li><a class="transition hover:text-white" href="../pages/contacto.html">Contáctanos</a></li>
-      </ul>
-    </nav>
-
-    <div>
-      <h3 class="font-extrabold text-gold">Visítanos</h3>
-      <address class="mt-5 space-y-3 text-sm not-italic leading-6 text-slate-300">
-        Jr. Córdova N.º 650<br />Huanta, Ayacucho - Perú<br />
-        <a class="transition hover:text-white" href="tel:+5166322296">(066) 322296</a><br />
-        <a class="transition hover:text-white" href="mailto:informes@iestphuanta.edu.pe">informes@iestphuanta.edu.pe</a>
-      </address>
-      <p class="mt-5 text-sm text-slate-300">Horario: Lun - Vie: 7:30 am - 1:15 pm</p>
+    <div class="border-t border-white/10">
+      <div class="footer-wrap flex flex-col gap-2 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2026 IESTP Huanta. Todos los derechos reservados.</p>
+        <p>Educación pública al servicio de la comunidad.</p>
+      </div>
     </div>
-  </div>
+  `;
 
-  <div class="border-t border-white/10">
-    <div class="footer-wrap flex flex-col gap-2 py-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-      <p>© 2025 IESTP Huanta. Todos los derechos reservados.</p>
-      <p>Educación pública al servicio de la comunidad.</p>
-    </div>
-  </div>`;
-
-const siteFooter = document.querySelector("[data-site-footer]");
-
-if (siteFooter) {
-  siteFooter.innerHTML = footerTemplate;
+  siteFooter.innerHTML = footerHTML;
 }

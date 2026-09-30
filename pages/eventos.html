@@ -3,70 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eventos y acontecimientos del IESTP Huanta." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/tailwind.generated.css" />
     <title>Eventos | IESTP Huanta</title>
   </head>
   <body class="bg-[#fbfcfa] text-ink">
     <header class="border-b border-slate-200 bg-white">
       <nav class="section-wrap flex min-h-20 items-center justify-between">
-        <a
-          href="../index.html"
-          class="flex items-center gap-3 font-extrabold text-navy"
-          ><span
-            class="grid size-11 place-items-center rounded-xl bg-navy text-white"
-            >H</span
-          >IESTP Huanta</a
-        ><a
-          href="../index.html"
-          class="rounded-full border border-slate-200 px-4 py-2 text-sm font-bold text-navy hover:border-teal"
-          >← Inicio</a
-        >
+        <a href="../index.html" class="flex items-center gap-3 text-navy" aria-label="Ir al inicio">
+          <span class="grid size-11 place-items-center rounded-xl bg-navy text-lg font-extrabold text-white">H</span>
+          <span class="leading-tight">
+            <strong class="block text-sm font-extrabold">IESTP Huanta</strong>
+            <small class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Educación que transforma</small>
+          </span>
+        </a>
+        <div class="flex items-center gap-3">
+          <a href="../index.html" class="rounded-full px-4 py-2 text-sm font-bold text-slate-600 hover:text-teal">Inicio</a>
+          <a href="admision.html" class="rounded-full bg-gold px-5 py-3 text-sm font-extrabold text-navy transition hover:bg-amber-300">Admisión <span aria-hidden="true">→</span></a>
+        </div>
       </nav>
     </header>
+
     <main>
       <section class="page-hero py-20 text-white">
         <div class="section-wrap">
-          <p
-            class="text-xs font-extrabold uppercase tracking-[0.2em] text-gold"
-          >
-            Vive la comunidad
-          </p>
-          <h1 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-6xl">
-            Eventos
-          </h1>
+          <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-gold">Vive la comunidad</p>
+          <h1 class="mt-4 text-4xl font-extrabold sm:text-6xl">Acontecimientos Resaltantes</h1>
           <p class="mt-5 max-w-xl text-lg leading-8 text-slate-200">
-            Participa en las actividades que conectan talento, creatividad y
-            comunidad.
+            Mostramos solo los eventos más importantes y significativos, organizados con dedicación y entusiasmo.
           </p>
         </div>
       </section>
-      <section class="section-wrap grid gap-5 py-16 md:grid-cols-2">
-        <article class="rounded-2xl bg-navy p-8 text-white shadow-xl">
-          <span
-            class="text-xs font-extrabold uppercase tracking-widest text-gold"
-            >Celebración</span
-          >
-          <h2 class="mt-10 text-2xl font-extrabold">
-            Aniversario Institucional
-          </h2>
-          <p class="mt-4 leading-7 text-slate-300">
-            Actividades conmemorativas para celebrar nuestra historia y
-            reconocer a nuestra comunidad.
-          </p>
-        </article>
-        <article class="rounded-2xl bg-teal p-8 text-white shadow-xl">
-          <span
-            class="text-xs font-extrabold uppercase tracking-widest text-gold"
-            >Creatividad</span
-          >
-          <h2 class="mt-10 text-2xl font-extrabold">Concurso de Innovación</h2>
-          <p class="mt-4 leading-7 text-teal-50">
-            Presentación de proyectos tecnológicos creados por nuestros
-            estudiantes.
-          </p>
-        </article>
+
+      <section class="section-wrap py-16">
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="group relative overflow-hidden rounded-2xl shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="absolute inset-0">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="Aniversario Institucional" class="h-full w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+            </div>
+            <div class="relative flex min-h-[20rem] flex-col justify-end p-6 text-white">
+              <span class="text-xs font-bold uppercase tracking-widest text-gold">Celebración</span>
+              <h2 class="mt-2 text-xl font-extrabold">Aniversario Institucional</h2>
+              <p class="mt-2 text-sm leading-6 text-slate-200">Actividades conmemorativas del instituto. Celebración de nuestros años formando profesionales técnicos.</p>
+              <span class="mt-3 text-xs font-semibold text-slate-300">📅 Por anunciar</span>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="absolute inset-0">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="Feria Tecnológica" class="h-full w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-teal/90 via-teal/40 to-transparent"></div>
+            </div>
+            <div class="relative flex min-h-[20rem] flex-col justify-end p-6 text-white">
+              <span class="text-xs font-bold uppercase tracking-widest text-gold">Innovación</span>
+              <h2 class="mt-2 text-xl font-extrabold">Feria Tecnológica</h2>
+              <p class="mt-2 text-sm leading-6 text-teal-50">Participación de estudiantes con proyectos innovadores en la feria tecnológica anual.</p>
+              <span class="mt-3 text-xs font-semibold text-teal-100">📅 Por anunciar</span>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="absolute inset-0">
+              <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=800&q=80" alt="Concurso de Innovación" class="h-full w-full object-cover transition duration-500 group-hover:scale-110" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+            </div>
+            <div class="relative flex min-h-[20rem] flex-col justify-end p-6 text-white">
+              <span class="text-xs font-bold uppercase tracking-widest text-gold">Creatividad</span>
+              <h2 class="mt-2 text-xl font-extrabold">Concurso de Innovación</h2>
+              <p class="mt-2 text-sm leading-6 text-slate-200">Presentación de proyectos tecnológicos desarrollados por nuestros estudiantes.</p>
+              <span class="mt-3 text-xs font-semibold text-slate-300">📅 Por anunciar</span>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
+
     <footer data-site-footer class="border-t-4 border-gold bg-navy text-white" aria-labelledby="footer-title"></footer>
     <script src="../js/footer.js" defer></script>
   </body>
